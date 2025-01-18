@@ -4,10 +4,10 @@ import UnorderedList from "./UnorderedList"
 import AnchorTag from "./Anchor"
 import { Link } from "react-router-dom"
 import { motion } from "motion/react"
-const Intro = () => {
+const Intro = () => {   
     return(
         <motion.div
-         initial={{opacity:0,x:-500}}
+         initial={{opacity:0,x:-200}}
          whileInView={{opacity:1,x:0}}
          transition={{type:"tween"}}
          className=" h-auto min-h-[60vh] w-full lg:w-1/2 grid">
