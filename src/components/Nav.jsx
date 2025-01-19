@@ -4,7 +4,6 @@ const Nav = () => {
     const minutes = now.getMinutes();
     const ampm = hours < 12 ? "AM" : "PM";
 
-    
     const time = `${hours}:${minutes}${ampm}`;
     
     return(

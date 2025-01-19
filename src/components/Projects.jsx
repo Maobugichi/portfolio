@@ -6,14 +6,13 @@ const Projects = ({content}) => {
    
     return(
         <motion.div
-         initial={{opacity:0,scale:0}}
-         whileInView={{opacity:1,scale:1}}
-         transition={{type:"spring"}}
          className="lg:w-[60%] h-auto min-h-[70vh] grid gap-3 ">
             {content.map(content => {
                 const controls = useAnimation()
                 return(
-                   <AnchorTag href={content.link}>                  
+                   <AnchorTag 
+                    key={content.link}
+                    href={content.link}>                  
                     <motion.div 
                      onHoverStart={() => controls.start("hover")}
                      onHoverEnd={() => controls.start("rest")}
