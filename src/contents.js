@@ -2,6 +2,8 @@ import hangman from "./assets/hangmanhome.png";
 import fourconnect from "./assets/fourconnecthome.png";
 import essential from "./assets/essentialshome.png"
 import weathery from "./assets/weathery.png"
+import med from "./assets/med.png"
+import lear from "./assets/lear.png"
 const content = [
     {
         src:fourconnect,
@@ -34,6 +36,22 @@ const content = [
         features: "filtering cities, weather information 5 hours, 24hrs weather forecast",
         tools:"Built with React",
         link:"https://maobugichi.github.io/weathery/"
+    },
+    {
+        src:med,
+        title:"MedSpecter",
+        description:"A fully functional and responsive dashboard powered with ReactJs , motion and TailwindCSS",
+        features: "A medical dashboard with rich filtering options",
+        tools:"Built with React , motion, TailwindCSS",
+        link:"https://maobugichi.github.io/medspecter/"
+    },
+    {
+        src:lear,
+        title:"Learnly",
+        description:"A fully functional and responsive quiz template UI powered with ReactJs , motion and TailwindCSS",
+        features: "A basic quiz template with drag drop functionality and also select options",
+        tools:"Built with React , motion, TailwindCSS",
+        link:"https://maobugichi.github.io/learnly/"
     }
 ]
 
