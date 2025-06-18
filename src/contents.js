@@ -4,22 +4,24 @@ import essential from "./assets/essentialshome.png"
 import weathery from "./assets/weathery.png"
 import med from "./assets/med.png"
 import lear from "./assets/lear.png"
+import textflex from "./assets/textflex.png"
 const content = [
-    {
-        src:fourconnect,
-        title:"Four Connects Webgame ",
-        description: "A fun and intuitive webgame,based off the original four connects in a row game, fit for all age groups.",
-        features: "2 modes: player v cpu & player v player",
-        tools:" Leveraging the powers of  React, React router dom, framer-motion and tailwind-css",
-        link:"https://maobugichi.github.io/fourconnects/#/fourconnects"
+     {   
+        src:textflex,
+        title:"Textflex",
+        description: " fast, user-friendly platform for renting virtual numbers by country or service — perfect for secure signups, verifications, and temporary SMS needs.",
+        features: "Instant number rental by country or service, real-time SMS delivery, seamless payments, referral bonuses, and a clean, mobile-friendly interface.",
+        tools:" Leveraging the powers of  React, React router dom, framer-motion and tailwind-css , express , node and api's",
+        link:"www.textflex.net"
     },
-    {   
-        src:hangman,
-        title:"Hangman Webgame ",
-        description: "A fun and intuitive webgame,based off the original hangman guess game, fit for all age groups.",
-        features: "7 distinct categories: movies,tv shows,sports,animals,countries",
-        tools:" Leveraging the powers of  React, React router dom, framer-motion and tailwind-css",
-        link:"https://maobugichi.github.io/hangman/#/hangman/"
+   
+     {
+        src:med,
+        title:"MedSpecter",
+        description:"A fully functional and responsive dashboard powered with ReactJs , motion and TailwindCSS",
+        features: "A medical dashboard with rich filtering options",
+        tools:"Built with React , motion, TailwindCSS",
+        link:"https://maobugichi.github.io/medspecter/"
     },
     {
         src:essential,
@@ -38,21 +40,29 @@ const content = [
         link:"https://maobugichi.github.io/weathery/"
     },
     {
-        src:med,
-        title:"MedSpecter",
-        description:"A fully functional and responsive dashboard powered with ReactJs , motion and TailwindCSS",
-        features: "A medical dashboard with rich filtering options",
-        tools:"Built with React , motion, TailwindCSS",
-        link:"https://maobugichi.github.io/medspecter/"
-    },
-    {
         src:lear,
         title:"Learnly",
         description:"A fully functional and responsive quiz template UI powered with ReactJs , motion and TailwindCSS",
         features: "A basic quiz template with drag drop functionality and also select options",
         tools:"Built with React , motion, TailwindCSS",
         link:"https://maobugichi.github.io/learnly/"
-    }
+    },
+    {
+        src:fourconnect,
+        title:"Four Connects Webgame ",
+        description: "A fun and intuitive webgame,based off the original four connects in a row game, fit for all age groups.",
+        features: "2 modes: player v cpu & player v player",
+        tools:" Leveraging the powers of  React, React router dom, framer-motion and tailwind-css",
+        link:"https://maobugichi.github.io/fourconnects/#/fourconnects"
+    },
+     {   
+        src:hangman,
+        title:"Hangman Webgame ",
+        description: "A fun and intuitive webgame,based off the original hangman guess game, fit for all age groups.",
+        features: "7 distinct categories: movies,tv shows,sports,animals,countries",
+        tools:" Leveraging the powers of  React, React router dom, framer-motion and tailwind-css",
+        link:"https://maobugichi.github.io/hangman/#/hangman/"
+    },
 ]
 
 export default content
