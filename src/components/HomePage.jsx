@@ -12,7 +12,7 @@ const HomePage = () => {
             <div className="w-[90%] mx-auto flex lg:flex-row flex-col justify-between h-auto min-h-[80vh]">
                 <Intro/>
                 <Projects
-                 content={content.slice(0,3)}
+                 content={content.slice(0,4)}
                 />
             </div>
         </Main>

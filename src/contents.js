@@ -5,6 +5,7 @@ import weathery from "./assets/weathery.png"
 import med from "./assets/med.png"
 import lear from "./assets/lear.png"
 import textflex from "./assets/textflex.png"
+import bsdlight from "./assets/bsd.png"
 const content = [
      {   
         src:textflex,
@@ -30,6 +31,14 @@ const content = [
         features: "filtering options per date, color , price etc, a fully functional auth system to track users, add to cart functionality, add to wishlist, search functionality and data persistence",
         tools:" Leveraging the powers of  React, React router dom, framer-motion, auth0 , cookies and sessions and tailwind-css",
         link:"https://maobugichi.github.io/essentials/#/essentials/"
+    },
+    {
+    src: bsdlight,
+    title: "bsdlight, landing page for a construction company",
+    description: "A sleek and responsive landing page designed for a construction company, showcasing services, projects, and contact information with a professional and modern aesthetic.",
+    features: "Smooth scroll navigation, responsive design, service and project highlights, contact form integration, and animated UI sections for enhanced visual engagement.",
+    tools: "Built using React, React Router DOM, Tailwind CSS, and Framer Motion for smooth animations and transitions.",
+    link: "www.bsdlight.com"
     },
     {
         src:weathery,
