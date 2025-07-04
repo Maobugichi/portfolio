@@ -13,7 +13,7 @@ const content = [
         description: " fast, user-friendly platform for renting virtual numbers by country or service — perfect for secure signups, verifications, and temporary SMS needs.",
         features: "Instant number rental by country or service, real-time SMS delivery, seamless payments, referral bonuses, and a clean, mobile-friendly interface.",
         tools:" Leveraging the powers of  React, React router dom, framer-motion and tailwind-css , express , node and api's",
-        link:"www.textflex.net"
+        link:"https://www.textflex.net"
     },
    
      {
@@ -38,7 +38,7 @@ const content = [
     description: "A sleek and responsive landing page designed for a construction company, showcasing services, projects, and contact information with a professional and modern aesthetic.",
     features: "Smooth scroll navigation, responsive design, service and project highlights, contact form integration, and animated UI sections for enhanced visual engagement.",
     tools: "Built using React, React Router DOM, Tailwind CSS, and Framer Motion for smooth animations and transitions.",
-    link: "www.bsdlight.com"
+    link: "https://www.bsdlight.com"
     },
     {
         src:weathery,
