@@ -1,4 +1,4 @@
-import skills from "./Skills.js"
+import skills from "./Skills"
 import SkillBox from "./SkillBox"
 const SkillMap = () => {
     return(
