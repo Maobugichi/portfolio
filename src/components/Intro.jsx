@@ -4,25 +4,37 @@ import UnorderedList from "./UnorderedList"
 import AnchorTag from "./Anchor"
 import { Link } from "react-router-dom"
 import { motion } from "motion/react"
+import { AnimatedParagraph } from "./highlight"
 const Intro = () => {   
     return(
         <motion.div
          initial={{opacity:0,x:-200}}
          whileInView={{opacity:1,x:0}}
          transition={{type:"tween"}}
-         className=" h-auto min-h-[60vh] w-full lg:w-1/2 grid">
+         className=" h-auto min-h-[60vh] font-display py-16 w-full lg:w-1/2 grid space-y-5">
             <div className="grid">
-                <h1 className="text-2xl font-bold">Hello,</h1>
-                <Paragraph
-                className="text-sm w-[95%]"
-                content={<>Hello, I'm <span>Maobu</span>, a frontend engineer with a passion for building scalable, responsive, and visually stunning websites. I'm dedicated to delivering exceptional user experiences. I'm always in a constant state of learning, growing, and pushing the boundaries of what's possible.Explore my projects and let my work speak for itself.</>}
+                <h1 className="text-5xl font-bold font-sans">Hello 👋</h1>
+               <AnimatedParagraph
+                className="text-lg  md:text-xl tracking-wide leading-8 w-[95%]"
+                content={
+                    <>
+                    Hey there! I'm <span className="text-[#61B2E4] font-semibold">Maobu</span> , a passionate software engineer who loves crafting
+                    <span className="text-[#61B2E4]"> scalable</span>,{" "}
+                    <span className="text-[#61B2E4]">responsive</span>, and{" "}
+                    <span className="text-[#61B2E4]">visually striking</span> web applications.
+                    I thrive on turning ideas into smooth, high-performing digital experiences that not only work beautifully but *feel* right.
+                    Every line of code is a step in my journey to learn, grow, and push the limits of what’s possible.
+                    Dive into my projects  let the creativity, precision, and passion behind each one tell the story.
+                    </>
+                }
                 />
+
             </div>     
 
-            <UnorderedList className="flex flex-col gap-3">
+            <UnorderedList className="flex text-lg md:text-xl flex-col gap-3">
                 <Link to="/portfolio/skillset">
                     <ListItem
-                    className="hover:text-[#61b2e4] transition-colors duration-700 ease-linear flex items-center gap-1"
+                    className="hover:text-[#61b2e4]  transition-colors duration-700 ease-linear flex items-center gap-1"
                     content="Skills"
                     pointer={<svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className="w-4 h-4 group-hover:text-purple-300 transition-all duration-300" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path></svg>}
                     />
@@ -43,13 +55,13 @@ const Intro = () => {
                  </Link> 
             </UnorderedList>
 
-            <UnorderedList className="flex w-[90%]  lg:w-[70%] justify-between cursor-pointer">
+            <UnorderedList className="flex w-[90%] text-md md:text-xl  space-x-3 lg:w-[70%] justify-between cursor-pointer">
                 
                 <AnchorTag
                  href="https://www.linkedin.com/in/emekaemman-maobugichi-986a05276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
                 >
                     <ListItem
-                    className="flex text-sm items-center gap-1 transition-colors duration-150 ease-out hover:text-[#61b2e4]"
+                    className="flex  items-center gap-2 transition-colors duration-150 ease-out hover:text-[#61b2e4]"
                     img={<svg xmlns="http://www.w3.org/2000/svg" width={30} height={30} viewBox="0 0 72 72">
                         <rect width={50} height={50} x={11} y={11} fill="#61b2e4" rx={3}></rect>
                         <path fill="#fff" d="M20 30h6v21h-6z"></path>
@@ -70,7 +82,7 @@ const Intro = () => {
                   href="https://github.com/Maobugichi" 
                 >
                     <ListItem
-                    className="flex text-sm items-center gap-1  transition-colors duration-150 ease-out hover:text-[#61b2e4]"
+                    className="flex items-center gap-2  transition-colors duration-150 ease-out hover:text-[#61b2e4]"
                     img={<svg xmlns="http://www.w3.org/2000/svg" width={30} height={30} viewBox="0 0 48 48">
                             <g fill="#fff" clipRule="evenodd">
                             <path d="M24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4ZM0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z"></path>
@@ -86,7 +98,7 @@ const Intro = () => {
                  href="mailto:immansamuel846@gmail.com"
                 >
                     <ListItem
-                    className="flex text-sm items-center gap-1  transition-colors duration-150 ease-out hover:text-[#61b2e4]"
+                    className="flex  items-center gap-2  transition-colors duration-150 ease-out hover:text-[#61b2e4]"
                     img={ <svg xmlns="http://www.w3.org/2000/svg" width={30} height={30} viewBox="0 0 24 24">
                             <g fill="none" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} color="#000">
                                 <path d="m7 7.5l2.942 1.74c1.715 1.014 2.4 1.014 4.116 0L17 7.5"></path>

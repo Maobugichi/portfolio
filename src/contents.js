@@ -4,9 +4,20 @@ import essential from "./assets/essentialshome.png"
 import weathery from "./assets/weathery.png"
 import med from "./assets/med.png"
 import lear from "./assets/lear.png"
-import textflex from "./assets/textflex.png"
-import bsdlight from "./assets/bsd.png"
+import textflex from "./assets/textflex-ss.png"
+import bsdlight from "./assets/fullbsd.png";
+import toyshop from "./assets/toystore-ss.png";
+
+
 const content = [
+     {
+        src: bsdlight,
+        title: "bsdlight, landing page for a construction company",
+        description: "A sleek and responsive landing page designed for a construction company, showcasing services, projects, and contact information with a professional and modern aesthetic.",
+        features: "Smooth scroll navigation, responsive design, service and project highlights, contact form integration, and animated UI sections for enhanced visual engagement.",
+        tools: "Built using React, React Router DOM, Tailwind CSS, and Framer Motion for smooth animations and transitions.",
+        link: "https://www.bsdlight.com"
+    },
      {   
         src:textflex,
         title:"Textflex",
@@ -15,7 +26,14 @@ const content = [
         tools:" Leveraging the powers of  React, React router dom, framer-motion and tailwind-css , express , node and api's",
         link:"https://www.textflex.net"
     },
-   
+    {
+    src: toyshop,
+        title: "TheToyShop clothing brand store",
+        description: "A modern e-commerce platform built for a contemporary clothing brand, offering a sleek and intuitive shopping experience. Designed to reflect the brand’s style while ensuring performance, scalability, and user satisfaction.",
+        features: "comprehensive product catalog, advanced filtering by size, color, and price, secure user authentication, add-to-cart and wishlist functionality, order tracking, and a fully responsive design for all screen sizes.",
+        tools: "Developed using React, React DOM, Shadcn UI for elegant and accessible component design, Node.js, and Express.js for a robust backend API.",
+        link: "https://thetoyshop.net.ng"
+    },
      {
         src:med,
         title:"MedSpecter",
@@ -32,14 +50,7 @@ const content = [
         tools:" Leveraging the powers of  React, React router dom, framer-motion, auth0 , cookies and sessions and tailwind-css",
         link:"https://maobugichi.github.io/essentials/#/essentials/"
     },
-    {
-    src: bsdlight,
-    title: "bsdlight, landing page for a construction company",
-    description: "A sleek and responsive landing page designed for a construction company, showcasing services, projects, and contact information with a professional and modern aesthetic.",
-    features: "Smooth scroll navigation, responsive design, service and project highlights, contact form integration, and animated UI sections for enhanced visual engagement.",
-    tools: "Built using React, React Router DOM, Tailwind CSS, and Framer Motion for smooth animations and transitions.",
-    link: "https://www.bsdlight.com"
-    },
+  
     {
         src:weathery,
         title:"weathery your personal weather app",
