@@ -5,3 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.scrollbar-thin {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}

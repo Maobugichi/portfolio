@@ -5,15 +5,22 @@ import AnchorTag from "./Anchor"
 import { Link } from "react-router-dom"
 import { motion } from "motion/react"
 import { AnimatedParagraph } from "./highlight"
+import { Hand } from 'lucide-react'
+import { FaRegHand } from "react-icons/fa6"
+import { FaRegHandPaper } from "react-icons/fa"
+
 const Intro = () => {   
     return(
         <motion.div
          initial={{opacity:0,x:-200}}
          whileInView={{opacity:1,x:0}}
          transition={{type:"tween"}}
-         className=" h-auto min-h-[60vh] font-display py-16 w-full lg:w-1/2 grid space-y-5">
+         className=" h-auto min-h-[60vh] font-display py-16 w-full lg:w-1/2 grid space-y-16 md:space-y-5">
             <div className="grid">
-                <h1 className="text-5xl font-bold font-sans">Hello 👋</h1>
+               
+                <h1 className="text-5xl font-bold font-sans">
+                  Hello <span className="inline-block animate-wave origin-[70%_70%]">👋</span>
+                </h1>
                <AnimatedParagraph
                 className="text-lg  md:text-xl tracking-wide leading-8 w-[95%]"
                 content={
@@ -32,21 +39,21 @@ const Intro = () => {
             </div>     
 
             <UnorderedList className="flex text-lg md:text-xl flex-col gap-3">
-                <Link to="/portfolio/skillset">
+                <Link to="/skillset">
                     <ListItem
                     className="hover:text-[#61b2e4]  transition-colors duration-700 ease-linear flex items-center gap-1"
                     content="Skills"
                     pointer={<svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className="w-4 h-4 group-hover:text-purple-300 transition-all duration-300" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path></svg>}
                     />
                 </Link>
-                <Link to="/portfolio/allprojects">
+                <Link to="/allprojects">
                     <ListItem
                     className="hover:text-[#61b2e4] transition-colors duration-700 ease-linear flex items-center gap-1"
                     content="All Projects"
                     pointer={<svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className="w-4 h-4 group-hover:text-purple-300 transition-all duration-300" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path></svg>}
                     />
                 </Link>
-                <Link to="/portfolio/aboutme">
+                <Link to="/aboutme">
                     <ListItem
                     className="hover:text-[#61b2e4] transition-colors duration-700 ease-linear flex items-center gap-1"
                     content="More about Me"
