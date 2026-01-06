@@ -10,15 +10,15 @@ const ProjectItem = ({ content, index }) => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                whileHover={{ x: 8 }}
+              
                 className="group relative border-l-2 border-transparent  pl-4 py-6 transition-all duration-300"
             >
-                {/* Image Preview - Always Visible */}
+              
                 <div className="relative mb-4 overflow-hidden rounded-lg aspect-video bg-slate-900">
                     <motion.img
-                        whileHover={{ scale: 1.05 }}
+                       
                         transition={{ duration: 0.3 }}
-                        className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" 
+                        className="w-full h-full object-fill opacity-80 group-hover:opacity-100 transition-opacity" 
                         src={content.src} 
                         alt={content.title}
                     />

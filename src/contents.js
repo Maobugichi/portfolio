@@ -4,9 +4,9 @@ import essential from "./assets/essentialshome.png"
 import weathery from "./assets/weathery.png"
 import med from "./assets/med.png"
 import lear from "./assets/lear.png"
-import textflex from "./assets/textflex-ss.png"
-import bsdlight from "./assets/fullbsd.png";
-import toyshop from "./assets/toystore-ss.png";
+import textflex from "./assets/textflexhero.png"
+import bsdlight from "./assets/bsdhero.png";
+import toyshop from "./assets/toyhero.png";
 
 
 const content = [
