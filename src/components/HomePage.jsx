@@ -1,4 +1,4 @@
-import Projects from "./Projects"
+import Projects from "./project/Projects"
 import Nav from "./Nav"
 import Intro from "./Intro"
 import Main from "./Main"

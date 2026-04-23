@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import { motion } from "motion/react"
-import { ProjectItem } from "./project/projectItem"
+import { ProjectItem } from "./ProjectItem"
 
 const Projects = ({content = []}) => {
     return(

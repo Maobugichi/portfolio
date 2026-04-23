@@ -1,5 +1,5 @@
 import content from "../../contents"
-import Projects from "../Projects"
+import Projects from "./Projects"
 import Nav from "../Nav"
 import Container from "../Container"
 import Main from "../Main"
