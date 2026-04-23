@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import SkillSet from "./components/SkillSet";
-import AllProjects from "./components/AllProjects";
+import AllProjects from "./components/project/AllProjects";
 import MoreAboutMe from "./components/MoreAboutMe";
 import "./index.css";
 

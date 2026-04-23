@@ -1,13 +1,10 @@
 import ListItem from "./ListItem"
-import Paragraph from "./ProjectPara"
 import UnorderedList from "./UnorderedList"
 import AnchorTag from "./Anchor"
 import { Link } from "react-router-dom"
 import { motion } from "motion/react"
 import { AnimatedParagraph } from "./highlight"
-import { Hand } from 'lucide-react'
-import { FaRegHand } from "react-icons/fa6"
-import { FaRegHandPaper } from "react-icons/fa"
+
 
 const Intro = () => {   
     return(
@@ -25,7 +22,7 @@ const Intro = () => {
                 className="text-lg  md:text-xl tracking-wide leading-8 w-[95%]"
                 content={
                     <>
-                    Hey there! I'm <span className="text-[#61B2E4] font-semibold">Maobu</span> , a passionate software engineer who loves crafting
+                    Hey there! I`&apos;`m <span className="text-[#61B2E4] font-semibold">Maobu</span> , a passionate software engineer who loves crafting
                     <span className="text-[#61B2E4]"> scalable</span>,{" "}
                     <span className="text-[#61B2E4]">responsive</span>, and{" "}
                     <span className="text-[#61B2E4]">visually striking</span> web applications.

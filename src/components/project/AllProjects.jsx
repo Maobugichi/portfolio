@@ -1,9 +1,9 @@
-import content from "../contents"
-import Projects from "./Projects"
-import Nav from "./Nav"
-import Container from "./Container"
-import Main from "./Main"
-import Button from "./Button"
+import content from "../../contents"
+import Projects from "../Projects"
+import Nav from "../Nav"
+import Container from "../Container"
+import Main from "../Main"
+import Button from "../Button"
 const AllProjects = () => {
     return(
         <Container>
