@@ -1,31 +1,41 @@
+import PropTypes from "prop-types";
 import { motion } from "motion/react";
 
-const AnimatedLetter = ({letters}) => {
-    const variants = {
-        toLeft: { x: 20 },
-        toRight: { x: 0 },
-    };
-    return(
-        <motion.div
-        whileHover={{
-        children: {
-            stagger: { children: 0.05  },
-            y: -10,
-            transition: { duration: 0.5 },
-        },
-        }}
-        className="text-[#61b2e4] text-2xl"
-    >
-        {letters.split("").map((letter,index) => (
-        <motion.span
-            key={index}
-            variants={variants}
-        >
-            {letter}
-        </motion.span>
-        ))}
-        </motion.div>
-    )
-}
+const AnimatedLetter = ({ letters = "" }) => {
+  const variants = {
+    hidden: { x: 20, opacity: 0 },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.3 },
+    },
+  };
 
-export default AnimatedLetter
+  return (
+    <motion.div
+      whileHover={{
+        transition: {
+          staggerChildren: 0.05,
+        },
+      }}
+      className="text-[#61b2e4] text-2xl inline-flex"
+    >
+      {letters.split("").map((letter, index) => (
+        <motion.span
+          key={`${letter}-${index}`}
+          variants={variants}
+          whileHover={{ y: -10 }}
+          className="inline-block"
+        >
+          {letter}
+        </motion.span>
+      ))}
+    </motion.div>
+  );
+};
+
+AnimatedLetter.propTypes = {
+  letters: PropTypes.string,
+};
+
+export default AnimatedLetter;

@@ -1,7 +1,6 @@
-import textflex from "./assets/textflexhero.png"
-import bsdlight from "./assets/bsdhero.png";
+import bsdlight from "./assets/bsd-hero.png";
 import toyshop from "./assets/toyhero.png";
-import creat from "./assets/creat-hero.png"; // add your image to assets
+import creat from "./assets/creat-hero.png"; 
 
 const content = [
     {
@@ -13,12 +12,12 @@ const content = [
         link: "https://www.bsdlight.com"
     },
     {
-        src: textflex,
-        title: "Textflex",
-        description: "A fast, user-friendly platform for renting virtual numbers by country or service — perfect for secure signups, verifications, and temporary SMS needs.",
-        features: "Instant number rental by country or service, real-time SMS delivery, seamless payments, referral bonuses, and a clean, mobile-friendly interface.",
-        tools: "React, React Router DOM, Motion, Tailwind CSS, Express, Node, APIs",
-        link: "https://www.textflex.net"
+        src: creat,
+        title: "Creat",
+        description: "A creative landing page built to showcase bold design and smooth animations, combining modern tooling with expressive motion to deliver a visually compelling and performant web experience.",
+        features: "GSAP-powered scroll animations, fluid page transitions, responsive layout, interactive UI sections, and a polished aesthetic built for creative presentation.",
+        tools: "React, Tailwind CSS, TypeScript, GSAP, Motion",
+        link: "https://creat-liard.vercel.app/"  
     },
     {
         src: toyshop,
@@ -28,14 +27,7 @@ const content = [
         tools: "React, React DOM, Shadcn UI, Node, Express",
         link: "https://thetoyshop.net.ng"
     },
-    {
-        src: creat,
-        title: "Creat",
-        description: "A creative landing page built to showcase bold design and smooth animations, combining modern tooling with expressive motion to deliver a visually compelling and performant web experience.",
-        features: "GSAP-powered scroll animations, fluid page transitions, responsive layout, interactive UI sections, and a polished aesthetic built for creative presentation.",
-        tools: "React, Tailwind CSS, TypeScript, GSAP, Motion",
-        link: ""  // add your link here
-    },
+   
 ]
 
 export default content
